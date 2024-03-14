@@ -24,7 +24,6 @@ void LoginForm::on_buttonBox_accepted()
             ui->loginEdit->text() + "\'";
 
     QSqlQuery runQuery(query, m_PsqlDb);
-    //emit accepted();
 
         while (runQuery.next())
         {
